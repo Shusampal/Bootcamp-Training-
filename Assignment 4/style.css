@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+nav ul{
+    margin-right: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    list-style: none;
+    height: 40px;
+    margin-top: 15px;
+    
+}
+
+a{
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+nav{
+    margin-bottom: 10px;
+    background-color:rgb(13, 46, 46);
+    border-radius: 5px;
+    box-shadow: 3px 8px 5px -4px rgb(189, 174, 43);
+}
+
+
+
+body{
+    background-color: rgb(19, 18, 18);
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width:839px){
+    #intro h1{
+        font-size: 1rem;
+    }
+}
+
+#intro h1{
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: rgb(207, 144, 144);
+    font-weight: 900;
+    
+}
+
+#intro p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media (max-width:839px){
+    #intro h1{
+        font-size: 2.5rem;
+    }
+
+    #intro p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:532px){
+    #intro h1{
+        font-size: 2.2rem;
+    }
+
+    #intro p{
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width:360px){
+    #intro h1{
+        font-size: 1.8rem;
+        padding-top: 10px;
+    }
+
+    #intro p{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:300px){
+    #intro h1{
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+
+    #intro p{
+        font-size: 0.8rem;
+    }
+}
+
+figure{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+figure img{
+    width: 800px;
+    height: 300px;
+    animation-name: slider;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    position: relative;
+}
+
+@keyframes slider{
+    0%{
+        right: 0px;
+    }
+
+    25%{
+        right: 480px;
+    }
+
+    50%{
+        right: 960px;
+    }
+
+    75%{
+        right:1400px;
+    }
+
+    100%{
+        right: 1950px;
+    }
+  
+}
+
+#card{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+#one{
+    width: 350px;
+    height: 250px;
+    background-color: #ccc;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+#two{
+    width: 350px;
+    height: 250px;
+    background-color: #ccc;
+    border-radius: 10%;
+    padding: 10px;
+
+}
+
+#three{
+    width: 350px;
+    height: 250px;
+    background-color: #ccc;
+    border-radius: 10%;
+    padding: 10px;
+
+}
+
+#card h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:300px){
+    #card{
+        margin:20px;
+    }
+}
+#foot div{
+    background-color: rgb(26, 32, 47);
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#foot h1{
+    color: rgb(230, 223, 123);
+}
+
+legend{
+    color: white;
+    font-size: 2.5rem;
+}
+
+input,textarea{
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: lightgoldenrodyellow;
+}
+
+input{
+    width: 397px;
+    outline: none;
+}
+
+textarea{
+    outline: none;
+}
+
+
+@media  (max-width:1274px)
+{
+    #one,#two,#three{
+        width: auto;
+        height: auto;
+        padding: 15px;
+    }
+}
+
+
+
+@media (max-width:1006px)
+{
+    #foot div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #foot div h1{
+        padding-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    input , textarea , legend{
+        font-size: 1.8rem;
+        width: 300px;
+    }
+
+    textarea{
+        height: 90px;
+    }
+
+}
+
+@media (max-width:578px)
+{
+    #foot div h1{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:474px)
+{
+    #foot div h1{
+        font-size: 1.2rem;
+        padding-top: 5px;
+    }
+
+    input , textarea , legend{
+        font-size: 1.3rem;
+        width: 300px;
+    }
+}
+
+@media (max-width:342px)
+{
+    #foot div h1{
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+
+    input , textarea , legend{
+        font-size: 1.2rem;
+        width: 250px;
+    }
+}
+
+
+@media (max-width:300px){
+    #foot div h1{
+        font-size: 0.8rem;
+        padding-top: 0px;
+    }
+
+    input , textarea , legend{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 0.9rem;
+        width: 200px;
+    }
+}
+
