@@ -1,0 +1,56 @@
+#container{
+    width: 30%;
+    height: auto;
+    margin: 30px auto;
+    background-color: rgba(240, 248, 255, 0);
+    padding: 10px;
+    
+
+}
+
+#contain{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+#input{
+    width: 70%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 3px;
+    margin-left: 55px;
+    box-shadow: 5px 8px 6px -6px goldenrod;
+    background-color: rgb(238, 238, 188);
+    outline: none;
+}
+
+
+h2{
+    font-size: 3rem;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.3rem;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.none{
+    display: none;
+}
+
+
+
+body{
+    height: 90vh;
+    background: url('./bg.jpg') center center / cover no-repeat;
+    
+}
+
